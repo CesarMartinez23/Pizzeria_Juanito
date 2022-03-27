@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Pizzeria Juanito</string>
+    <string name="button_text_send">Ordenar</string>
+    <string name="button_back_activity">Regresar</string>
+
+    <string name="hint_client_name">Ingrese su nombre</string>
+    <string name="tittle_size_pizza">Tamaño de Pizza</string>
+    <string name="text_small_pizza">Pequeña $4</string>
+    <string name="text_medium_pizza">Mediana $6</string>
+    <string name="text_big_pizza">Grande $8</string>
+
+    <!-- Ingredients -->
+
+    <string name="text_tittle_ingredients">Selecciona Tus Ingredientes</string>
+
+
+    <string name="text_meat">Carne $4</string>
+    <string name="text_Ham">Jamón $4</string>
+    <string name="text_Pepperoni">Pepperoni $4</string>
+    <string name="text_Three_Cheeses">3 Quesos $4</string>
+
+    <string name="text_olives">Aceitunas $1</string>
+    <string name="text_Mushrooms">Hongos $1</string>
+    <string name="text_Vegetables">Vegetales $1</string>
+
+    <string name="text_Pineapple">Piña $1</string>
+    <string name="text_Jalapeno">Jalapeño $1</string>
+</resources>

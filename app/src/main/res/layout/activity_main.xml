@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-6dp"
+    android:background="@drawable/background_one">
+
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="177dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hint_client_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_app_name" />
+
+    <TextView
+        android:id="@+id/text_select_size_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="167dp"
+        android:text="@string/tittle_size_pizza"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_person_name" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_select_size_pizza">
+
+        <RadioButton
+            android:id="@+id/radioButton_small_pizza"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="@string/text_small_pizza"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_medium_pizza"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:text="@string/text_medium_pizza"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_big_pizza"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/text_big_pizza"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_select_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/text_tittle_ingredients"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Meat"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/text_meat"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_select_ingredients" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Ham"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/text_Ham"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_Pepperoni"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Meat"
+        app:layout_constraintTop_toBottomOf="@+id/text_select_ingredients" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Pepperoni"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/text_Pepperoni"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_select_ingredients" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Mushrooms"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/text_Mushrooms"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_Vegetables"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Three_Cheeses"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Ham" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Vegetables"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/text_Vegetables"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Pepperoni" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Three_Cheeses"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/text_Three_Cheeses"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Meat" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Olives"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/text_olives"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_Jalapeno"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Pineapple"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Mushrooms" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Jalapeno"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/text_Jalapeno"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Vegetables" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Pineapple"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/text_Pineapple"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Three_Cheeses" />
+
+    <Button
+        android:id="@+id/button_send_information"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_text_send"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Olives"
+        app:layout_constraintVertical_bias="0.239" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
